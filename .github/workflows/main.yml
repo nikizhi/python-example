@@ -1,0 +1,14 @@
+name: Doing it for DZ DevOps
+on: [push]
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run build
+        run: docker build -t python-app .
+      - name: Test
+        run: test.py
+      - name: Ending
+        run: echo "It’s my workflow"
