@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r .github/workflows/requirements.txt
       - name: Run build
         run: docker build -t python-app .
       - name: Test
-        run: test.py
+        run: .github/workflows/test.py
       - name: Ending
         run: echo "It’s my workflow"
