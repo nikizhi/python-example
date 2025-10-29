@@ -10,6 +10,6 @@ jobs:
       - name: Run build
         run: docker build -t python-app .
       - name: Test
-        run: test.py
+        run: python test.py
       - name: Ending
         run: echo "It’s my workflow"
