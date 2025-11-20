@@ -1,4 +1,5 @@
 import pytest, os
 
-def file_test():
+def test_file():
     assert os.path.isfile('app.py') == True
+
