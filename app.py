@@ -1,8 +1,2 @@
-from fastapi import FastAPI
+print("it's my workflow")
 
-app = FastAPI()
-
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
