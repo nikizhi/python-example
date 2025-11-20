@@ -14,4 +14,4 @@ jobs:
           pip install pytest
           pytest test.py -v
       - name: Ending
-        run: docker run --rm my-app 
+        run: docker run --rm python-app 
