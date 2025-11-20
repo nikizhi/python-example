@@ -14,4 +14,4 @@ jobs:
           pip install pytest
           pytest test.py -v
       - name: Ending
-        run: echo "it's my workflow"
+        run: docker run --rm my-app 
