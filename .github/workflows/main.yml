@@ -12,6 +12,6 @@ jobs:
       - name: Test
         run: |
           pip install pytest
-          pytest -v
+          pytest test.py -v
       - name: Ending
         run: docker run --rm python-app
